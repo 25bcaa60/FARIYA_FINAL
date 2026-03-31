@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fariya | Futuristic Portfolio</title>
+    <meta
+      name="description"
+      content="A futuristic portfolio built with HTML, CSS, JavaScript, Node.js, and Neon DB."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#home"><span>F</span>ariya</a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="btn btn-small" href="#contact">Hire Me</a>
+      </header>
+
+      <main>
+        <section class="hero reveal" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow">Full-Stack Portfolio Experience</p>
+            <h1>
+              Designing web products that feel
+              <span>ahead of their time.</span>
+            </h1>
+            <p class="lead">
+              This portfolio blends a cinematic frontend with a Node.js backend and
+              Neon database integration, creating a polished and futuristic digital presence.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn" href="#projects">Explore Work</a>
+              <a class="btn btn-ghost" href="#contact">Start a Project</a>
+            </div>
+
+            <div class="mini-stats">
+              <div class="stat">
+                <strong>10+</strong>
+                <span>UI concepts shipped</span>
+              </div>
+              <div class="stat">
+                <strong>24/7</strong>
+                <span>Creative energy</span>
+              </div>
+              <div class="stat">
+                <strong>100%</strong>
+                <span>Responsive design</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="orb orb-one"></div>
+            <div class="orb orb-two"></div>
+            <div class="orb orb-three"></div>
+
+            <div class="glass-panel">
+              <p class="panel-label">Live Build Stack</p>
+              <h3>Portfolio OS / v1.0</h3>
+              <ul>
+                <li>HTML, CSS & JavaScript frontend</li>
+                <li>Node.js + Express backend API</li>
+                <li>Neon Postgres message storage</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reveal" id="about">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>Clean code, bold style, meaningful interaction.</h2>
+          </div>
+
+          <div class="about-grid">
+            <article class="about-card">
+              <h3>Why this portfolio feels premium</h3>
+              <p>
+                Every part of the interface is designed to feel sleek, futuristic,
+                and user-focused. The visuals glow softly, the layout stays elegant,
+                and the contact form is backed by a real database.
+              </p>
+
+              <div class="feature-list">
+                <div>
+                  <span>01</span>
+                  <p>Dark futuristic palette with glowing gradients</p>
+                </div>
+                <div>
+                  <span>02</span>
+                  <p>Animated reveal effects and smooth scrolling</p>
+                </div>
+                <div>
+                  <span>03</span>
+                  <p>Lead capture form saved into Neon DB</p>
+                </div>
+              </div>
+            </article>
+
+            <aside class="timeline">
+              <div class="timeline-item">
+                <small>Frontend</small>
+                <strong>HTML • CSS • JavaScript</strong>
+              </div>
+              <div class="timeline-item">
+                <small>Backend</small>
+                <strong>Node.js • Express API</strong>
+              </div>
+              <div class="timeline-item">
+                <small>Database</small>
+                <strong>Neon PostgreSQL</strong>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section reveal" id="skills">
+          <div class="section-heading">
+            <p class="eyebrow">Core Skills</p>
+            <h2>Tools behind the experience.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card">Responsive Layouts</div>
+            <div class="skill-card">Glassmorphism UI</div>
+            <div class="skill-card">JavaScript Interactions</div>
+            <div class="skill-card">REST API Design</div>
+            <div class="skill-card">Node.js & Express</div>
+            <div class="skill-card">Neon Postgres</div>
+            <div class="skill-card">Form Validation</div>
+            <div class="skill-card">Modern Visual Design</div>
+          </div>
+        </section>
+
+        <section class="section reveal" id="projects">
+          <div class="section-heading">
+            <p class="eyebrow">Featured Projects</p>
+            <h2>Selected concepts with a futuristic aesthetic.</h2>
+          </div>
+
+          <div id="projectGrid" class="project-grid"></div>
+        </section>
+
+        <section class="section reveal" id="contact">
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something unforgettable.</h2>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-copy">
+              <h3>Ready for your next idea</h3>
+              <p>
+                Use the form to send a message. Once you add your Neon connection string,
+                submissions will be stored directly in the database.
+              </p>
+
+              <div class="contact-points">
+                <div>
+                  <span>Email</span>
+                  <strong>hello@fariya.dev</strong>
+                </div>
+                <div>
+                  <span>Status</span>
+                  <strong>Available for freelance work</strong>
+                </div>
+                <div>
+                  <span>Focus</span>
+                  <strong>Creative web experiences</strong>
+                </div>
+              </div>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+              <input type="text" name="name" placeholder="Your name" required />
+              <input type="email" name="email" placeholder="Your email" required />
+              <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+              <button type="submit" class="btn">Send to Neon DB</button>
+              <p id="formStatus" class="form-status"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        © <span id="year"></span> Fariya Portfolio • Designed with a futuristic aesthetic.
+      </footer>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

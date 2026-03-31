@@ -1,0 +1,9 @@
+{
+  "liveServer.settings.root": "/public",
+  "liveServer.settings.NoBrowser": false,
+  "liveServer.settings.ignoreFiles": [
+    "**/.vscode/**",
+    "**/.git/**",
+    "**/node_modules/**"
+  ]
+}

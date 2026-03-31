@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: fariya-portfolio
+    env: node
+    plan: free
+    region: ohio
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
