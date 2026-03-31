@@ -38,6 +38,16 @@ app.get(['/public', '/public/', '/public/index.html'], (req, res) => {
   res.redirect(301, '/');
 });
 
+app.get('/style.css', (req, res) => {
+  res.type('text/css');
+  res.sendFile(path.join(publicDir, 'style.css'));
+});
+
+app.get('/script.js', (req, res) => {
+  res.type('application/javascript');
+  res.sendFile(path.join(publicDir, 'script.js'));
+});
+
 app.use(express.static(publicDir));
 app.use('/public', express.static(publicDir));
 
@@ -77,7 +87,13 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.set('Cache-Control', 'no-store');
+  res.sendFile(path.join(publicDir, 'index.html'));
+});
+
 app.get('*', (req, res) => {
+  res.set('Cache-Control', 'no-store');
   res.sendFile(path.join(publicDir, 'index.html'));
 });
 
